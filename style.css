@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+  .left{
+      width: 195px;
+      background: linear-gradient(180deg, #4e73df 10%, #224abe 90%);
+  }
+  .right{
+    flex-grow: 1; /*Для управления шириной flex элементов*/
+  }
+  .header{
+      height: 70px;
+      background-color: white;
+      box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+  }
+  .content{
+      background-color: #f8f9fc;
+  }
