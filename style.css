@@ -1,15 +1,36 @@
 *{
     box-sizing: border-box;
 }
+/*font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif;*/
 .container{
     display: flex;
     justify-content: flex-start;
     height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
 }
 
   .left{
       width: 195px;
       background: linear-gradient(180deg, #4e73df 10%, #224abe 90%);
+  }
+  .text{
+    opacity: .8;
+    font-size: 14px;
+    margin-left: 14px;
+  }
+  .text:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .text__sm{
+    font-size: 10px;
+    font-weight: 800;
+    margin-left: 14px;
+    opacity: .5;
+    margin-top: 19px;
+    margin-bottom: 26px;
   }
   .right{
     flex-grow: 1; /*Для управления шириной flex элементов*/
@@ -21,4 +42,69 @@
   }
   .content{
       background-color: #f8f9fc;
+  }
+  .admin,
+  .interface,
+  .addons{
+  }
+  .admin{
+    margin-top: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .border__one{
+    border-bottom: 1px solid #6588E4;
+    margin-top: 26px;
+    margin-left: 14px;
+    width: 165px;
+  }
+  .border__two{
+    border-bottom: 1px solid #6588E4;
+    margin-top: 19px;
+    margin-left: 14px;
+    width: 165px;
+  }
+  .border__three{
+    border-bottom: 1px solid #6588E4;
+    margin-top: 23px;
+    margin-left: 14px;
+    width: 165px;
+  }
+  .dashboard{
+      margin-top: 21px;
+  }
+  .arrow__box-one{
+      margin-bottom: 48px;
+  }
+  .arrow__box-three{
+      margin-bottom: 44px;
+  }
+  .charts{
+    margin-bottom: 44px;
+  }
+  .components,
+  .utilities,
+  .pages{
+      line-height: 0.6;
+  }
+  .arrow__box{
+      display: flex;
+      justify-content: space-between;
+  }
+  .arrow {
+    width: 60px;
+    height: 60px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    height: 8px;
+    width: 8px;
+    transform: rotate(+45deg); 
+    margin-right: 14px;
+    opacity: .5;
+  }    
+  .arrow:hover{
+    opacity: 1;
+    cursor: pointer;
   }
