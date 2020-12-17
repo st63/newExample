@@ -7,10 +7,14 @@ $(function () {
     });
 
     $('.nav__link').click(function () {
-        $(this).parents('.nav__item').toggleClass('nav__item--open'); //обращаемся к родителю только текущего элемента
-        $(this).parents('.nav__item').children('.nav__dropdown').toggle(400, function(){
-            $(".nav__dropdown").not(this).hide(400);
-        });
+        const parent = $(this).parent()
+        const dropdown = parent.children('.nav__dropdown')
+
+        $('.nav__item').not(parent).removeClass('nav__item--open')
+        $('.nav__dropdown').not(dropdown).hide(400)
+
+        parent.toggleClass('nav__item--open')
+        dropdown.toggle(400)
     });
 
 });
