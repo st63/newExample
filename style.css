@@ -36,16 +36,21 @@
   }
   .logo{
     margin-top: 23px;
-    padding-bottom: 6px;
+    padding-bottom: 26px;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 16px;
     text-align: center;
-  }
-  .border{
     border-bottom: 1px solid #6588E4;
     width: 100%;
-    margin: 20px 0px 20px 0px;
+  }
+  .nav__box{
+    border-bottom: 1px solid #6588E4;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+  }
+  .nav__box-different{
+    border: none;
   }
   .nav__title{
     font-size: 10px;
