@@ -1,60 +1,42 @@
-*{
+  /*font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;*/
+  *{
     box-sizing: border-box;
-}
-a {
+  }
+  a{
     text-decoration: none;
     color: #fff;
   }
-/*font-family: 'Nunito', sans-serif;
-font-family: 'Roboto', sans-serif;*/
-.container{
+  ul{
+    list-style: none;
+  }
+  .container{
     display: flex;
     justify-content: flex-start;
     height: 100vh;
-    font-family: 'Nunito', sans-serif;
     color: #fff;
 }
-  .left{
-      width: 195px;
-      background: linear-gradient(180deg, #4e73df 10%, #224abe 90%);
-  }
-  .size{
-      width: 65px;
-  }
-  .text{
-    opacity: .8;
-    font-size: 14px;
-    margin-left: 14px;
-  }
-  .text:hover{
-    opacity: 1;
-    cursor: pointer;
-  }
-  .text__sm{
-    font-size: 10px;
-    font-weight: 800;
-    margin-left: 14px;
-    opacity: .5;
-    margin-top: 19px;
-    margin-bottom: 26px;
+  .sidebar{
+    width: 195px;
+    background: linear-gradient(180deg, #4e73df 10%, #224abe 90%);
+    font-family: 'Nunito', sans-serif;
+    padding: 0px 14px 0px 14px;
+    transition: 0.3s ease-out; /*красота анимашки*/
   }
   .right{
     flex-grow: 1; /*Для управления шириной flex элементов*/
   }
   .header{
-      height: 70px;
-      background-color: white;
-      box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
   }
   .content{
-      background-color: #f8f9fc;
+    background-color: #f8f9fc;
   }
-  .admin,
-  .interface,
-  .addons{
-  }
-  .admin{
+  .logo{
     margin-top: 23px;
+    padding-bottom: 6px;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 16px;
@@ -62,40 +44,31 @@ font-family: 'Roboto', sans-serif;*/
   }
   .border{
     border-bottom: 1px solid #6588E4;
-    margin-left: 14px;
-    width: 165px;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
   }
-  .border__one{
-    margin-top: 26px;
+  .nav__title{
+    font-size: 10px;
+    font-weight: 800;
+    opacity: .5;
+    margin-bottom: 21px;
   }
-  .border__two{
-    margin-top: 19px;
+  .nav__item{
+    opacity: .8;
+    font-size: 14px;
+    margin-bottom: 39px;
   }
-  .border__three{
-    margin-top: 23px;
+  .nav__item:hover{
+    opacity: 1;
+    cursor: pointer;
   }
-  .dashboard{
-      margin-top: 21px;
+  .nav__item-different{
+    margin-bottom: 0px;
   }
-  .arrow__box-one{
-      margin-bottom: 48px;
+  .size{
+    width: 65px;
   }
-  .arrow__box-three{
-      margin-bottom: 44px;
-  }
-  .charts{
-    margin-bottom: 44px;
-  }
-  .components,
-  .utilities,
-  .pages{
-      line-height: 0.6;
-  }
-  .arrow__box{
-      display: flex;
-      justify-content: space-between;
-  }
-  .arrow {
+  /*.arrow {
     width: 60px;
     height: 60px;
     border-top: 3px solid #fff;

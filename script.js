@@ -2,7 +2,7 @@ $(function(){
 
 
 $('button').click(function(){
-    $('.left').toggleClass('size');
+    $('.sidebar').toggleClass('size');
 });
 
 
