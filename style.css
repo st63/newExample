@@ -52,7 +52,8 @@
     padding-top: 20px;
   }
   .nav__link{
-    padding: 20px 100px 20px 0px;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
     display: inline-block;
     opacity: .8;
     font-size: 14px;
@@ -109,4 +110,32 @@
     padding: 16px 6px 2px 6px;
     border-radius: 5px;
     margin-bottom: 10px;
+  }
+  .btn{
+    background-color: #6987DF;
+    width: 40px;
+    height: 40px;
+    margin:0 auto;
+    border-radius: 100%;
+    position: relative;
+  }
+  .btn:hover{
+    cursor: pointer;
+  }
+  .btn__arrow{
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    width: 60px;
+    height: 60px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    height: 8px;
+    width: 8px;
+    transform: rotate(-135deg); 
+    opacity: .5;
+  }
+  .btn__rotate .btn__arrow{
+    transform: rotate(+45deg); 
+    left: 16px;
   }

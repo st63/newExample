@@ -2,10 +2,6 @@ $(function () {
 
     $('.nav__dropdown').hide();
 
-    $('button').click(function () {
-        $('.sidebar').toggleClass('size');
-    });
-
     $('.nav__link').click(function () {
         const parent = $(this).parent()
         const dropdown = parent.children('.nav__dropdown')
@@ -15,6 +11,11 @@ $(function () {
 
         parent.toggleClass('nav__item--open')
         dropdown.toggle(400)
+    });
+
+    $('.btn').click(function () {
+        $('.sidebar').toggleClass('size');
+        $('.btn').toggleClass('btn__rotate');
     });
 
 });
