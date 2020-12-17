@@ -35,33 +35,26 @@
     background-color: #f8f9fc;
   }
   .logo{
-    margin-top: 23px;
-    padding-bottom: 26px;
+    padding: 23px 0px 28px 0px;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 16px;
     text-align: center;
-    border-bottom: 1px solid #6588E4;
-    width: 100%;
   }
   .nav__box{
-    border-bottom: 1px solid #6588E4;
+    border-top: 1px solid #6588E4;
     width: 100%;
-    padding: 20px 0px 20px 0px;
-  }
-  .nav__box-different{
-    border: none;
   }
   .nav__title{
     font-size: 10px;
     font-weight: 800;
     opacity: .5;
-    margin-bottom: 21px;
+    padding-top: 20px;
   }
   .nav__item{
     opacity: .8;
     font-size: 14px;
-    margin-bottom: 39px;
+    padding: 20px 0px 20px 0px;
   }
   .nav__item:hover{
     opacity: 1;
