@@ -30,7 +30,13 @@
   .header{
     height: 70px;
     background-color: white;
+    color: #CFD5E1;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
   }
   .content{
     background-color: #f8f9fc;
@@ -183,3 +189,105 @@
   .fas{
     margin-right: 10px;
   }
+  .header__user--mail,
+  .header__user--alert,
+  .header__user--name,
+  .user--name__text,
+  .user--name__photo{
+    display: inline-block;
+  }
+  .header__search{
+    margin: auto 0;
+  }
+  .header__user{
+    margin: auto 0;
+  }
+  .search{
+    background-color: #F8F9FD;
+    width: 303px;
+    height: 31px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 10px;
+    position: relative;
+  }
+  .fa-search{
+    background-color: #4C6FD5;
+    color: white;
+    height: 31px;
+    width: 34px;
+    line-height: 2.5;
+    margin: auto 0;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+  }
+  .fa-search:hover{
+    cursor: pointer;
+  }
+  .user--name__photo{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: grey;
+    position: relative;
+  }
+  .user--name__photo:hover{
+    cursor: pointer;
+  }
+  .user--name__text{
+    margin: auto 0;
+    position: absolute;
+    right: 64px;
+    top: 20px;
+    border-left: 1px solid #CFD5E1;
+    padding-left: 20px;
+    height: 31px;
+    line-height: 2.7;
+  }
+  .header__user--mail{
+    position: absolute;
+    right: 180px;
+    top: 28px;
+    font-size: 14px;
+  }
+  .header__user--mail:hover{
+    cursor: pointer;
+  }
+  .header__user--alert:hover{
+    cursor: pointer;
+  }
+  .header__user--alert{
+    position: absolute;
+    right: 220px;
+    top: 28px;
+    font-size: 14px;
+  }
+  .alert__value{
+    font-size: 8px;
+    text-align: center;
+    width: 14px;
+    height: 11px;
+    background-color: #CB5743;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    top: -20px;
+    left: 7px;
+    line-height: 1.3;
+  }
+  .mail__value{
+    font-size: 8px;
+    text-align: center;
+    width: 11px;
+    height: 11px;
+    background-color: #CB5743;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    top: -20px;
+    left: 13px;
+    line-height: 1.3;
+  }
+  
