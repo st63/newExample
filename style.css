@@ -67,7 +67,20 @@
     opacity: 1;
   }
   .size{
-    width: 65px;
+    width: 102px;
+  }
+  .size .nav__link{
+    font-size: 12px;
+  }
+  .size .fas{
+    margin:0 25% 5px 25%;
+    width:50%;
+  }
+  .size .nav__title{
+    margin: 0 auto;
+  }
+  .size .nav__link--arrow{
+    display: none;
   }
   .nav__link--arrow{
     width: 60px;
