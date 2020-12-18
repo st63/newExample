@@ -80,6 +80,9 @@
     left: 156px;
     transition: 0.4s ease-out;
   }    
+  .nav__link--arrow{
+    opacity: 1;
+  }
   .nav__item--open .nav__link--arrow{
     transform: rotate(+135deg);
   }
@@ -115,7 +118,7 @@
     background-color: #6987DF;
     width: 40px;
     height: 40px;
-    margin:0 auto;
+    margin: 20px auto;
     border-radius: 100%;
     position: relative;
   }
@@ -134,8 +137,12 @@
     width: 8px;
     transform: rotate(-135deg); 
     opacity: .5;
+    transition: 0.4s ease-out;
   }
-  .btn__rotate .btn__arrow{
+  .btn__arrow:hover{
+    opacity: 1;
+  }
+  .size .btn__arrow{
     transform: rotate(+45deg); 
     left: 16px;
   }

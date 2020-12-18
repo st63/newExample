@@ -15,7 +15,6 @@ $(function () {
 
     $('.btn').click(function () {
         $('.sidebar').toggleClass('size');
-        $('.btn').toggleClass('btn__rotate');
     });
 
 });
