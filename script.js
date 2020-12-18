@@ -11,10 +11,13 @@ $(function () {
 
         parent.toggleClass('nav__item--open')
         dropdown.toggle(400)
+
     });
 
     $('.btn').click(function () {
         $('.sidebar').toggleClass('size');
     });
+
+
 
 });
