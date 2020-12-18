@@ -68,9 +68,11 @@
   }
   .size{
     width: 102px;
+    position: relative;
   }
   .size .nav__link{
     font-size: 12px;
+    text-align: center;
   }
   .size .fas{
     margin:0 25% 5px 25%;
@@ -78,9 +80,17 @@
   }
   .size .nav__title{
     margin: 0 auto;
+    text-align: center;
   }
   .size .nav__link--arrow{
     display: none;
+  }
+  .size #dmin{
+    display: none;
+  }
+  .size .nav__dropdown{
+    position: absolute;
+    right: -150%;
   }
   .nav__link--arrow{
     width: 60px;

@@ -15,11 +15,6 @@ $(function () {
 
     $('.btn').click(function () {
         $('.sidebar').toggleClass('size');
-        if ($('.sidebar').hasClass('size')) {
-            $('.size').children('.logo').text('A');
-        } else {
-            $('.sidebar').children('.logo').text('ADMIN');
-        }
     });
 
 });
