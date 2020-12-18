@@ -63,6 +63,9 @@
     opacity: 1;
     cursor: pointer;
   }
+  .nav__link:hover .nav__link--arrow{
+    opacity: 1;
+  }
   .size{
     width: 65px;
   }
@@ -125,6 +128,9 @@
   .btn:hover{
     cursor: pointer;
   }
+  .btn:hover .btn__arrow{
+    opacity: 1;
+  }
   .btn__arrow{
     position: absolute;
     top: 16px;
@@ -138,9 +144,6 @@
     transform: rotate(-135deg); 
     opacity: .5;
     transition: 0.4s ease-out;
-  }
-  .btn__arrow:hover{
-    opacity: 1;
   }
   .size .btn__arrow{
     transform: rotate(+45deg); 
