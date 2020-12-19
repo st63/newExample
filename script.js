@@ -1,6 +1,7 @@
 $(function () {
 
     $('.nav__dropdown').hide();
+    $('.user__dropdown').hide();
 
     $('.nav__link').click(function () {
         const parent = $(this).parent()
@@ -12,6 +13,10 @@ $(function () {
         parent.toggleClass('nav__item--open')
         dropdown.toggle(400)
 
+    });
+
+    $('.header__user--name').click(function () {
+        $('.user__dropdown').toggle(400)
     });
 
     $('.btn').click(function () {
