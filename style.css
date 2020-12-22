@@ -164,7 +164,7 @@
     background-color: #6987DF;
     width: 40px;
     height: 40px;
-    margin: 20px 38% 0 38%;
+    margin: 20px auto;
     border-radius: 100%;
     position: relative;
   }
@@ -462,7 +462,7 @@
   .btn-label {
     background: rgba(0,0,0,0.15);
   }
-  .row .fas{
+  button .fas{
     background: rgba(0,0,0,0.15);
     display: inline-block;
     padding: 11px 0px 11px 0px;
