@@ -1,5 +1,8 @@
   /*font-family: 'Nunito', sans-serif;
   font-family: 'Roboto', sans-serif;*/
+  .selector-for-some-widget {
+    box-sizing: content-box;
+  }  
   *{
     box-sizing: border-box;
   }
@@ -10,7 +13,7 @@
   ul{
     list-style: none;
   }
-  .container{
+  .container__all{
     display: flex;
     justify-content: flex-start;
     height: 100vh;
@@ -39,7 +42,7 @@
     font-family: 'Roboto', sans-serif;
   }
   .content{
-    background-color: #f8f9fc;
+    background-color: #F0F1F5;
   }
   .logo{
     padding: 23px 0px 28px 0px;
@@ -75,6 +78,9 @@
   }
   .size{
     width: 102px;
+  }
+  .size .btn{
+    margin: 20px 38% 0 26%;
   }
   .size .nav__item{
     position: relative;
@@ -154,18 +160,18 @@
     margin-bottom: 10px;
     width: 167px;
   }
-  .btn{
+  .btn__sidebar{
     background-color: #6987DF;
     width: 40px;
     height: 40px;
-    margin: 20px auto;
+    margin: 20px 38% 0 38%;
     border-radius: 100%;
     position: relative;
   }
-  .btn:hover{
+  .btn__sidebar:hover{
     cursor: pointer;
   }
-  .btn:hover .btn__arrow{
+  .btn__sidebar:hover .btn__arrow{
     opacity: 1;
   }
   .btn__arrow{
@@ -436,5 +442,45 @@
     height: 12px;
     border: 2px solid #fff;
     background-color: #1CC88A;
+  }
+  .container{
+    width: 50%;
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  button{
+    margin: 5px 0px 5px 36px;
+  }
+  .buttons__content{
+    margin: 5px 0px 5px 20px;
+  }
+  .button__title{
+    padding: 13px 0px 13px 36px;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+  .btn-label {
+    background: rgba(0,0,0,0.15);
+  }
+  .row .fas{
+    background: rgba(0,0,0,0.15);
+    display: inline-block;
+    padding: 11px 0px 11px 0px;
+    margin-right: 10px;
+    width: 38px;
+  }
+  button:hover{
+    box-shadow: inset 0 0 5px #000;
+  }
+  .btn{
+    padding: 0px 12px 0px 0px;
+  }
+  .btn-sm .fas{
+    padding: 6px 0px 6px 0px;
+    width: 28px;
+  }
+  .btn-lg .fas{
+    padding: 12px 0px 12px 0px;
+    width: 45px;
   }
   

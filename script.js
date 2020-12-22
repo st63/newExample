@@ -31,7 +31,7 @@ $(function () {
         userDropdown.toggle(animationSpeed)
     });
 
-    $('.btn').click(function () {
+    $('.btn__sidebar').click(function () {
         $('.sidebar').toggleClass('size');
     });
 
@@ -44,7 +44,7 @@ $(function () {
     });
 
     $(document).click(function (e) {
-        if (!navItem.is(e.target) && navItem.has(e.target).length === 0) {
+        if (!navItem.is(e.target) && navItem.has(e.target).length === 0) { // Если 1- мы не нажали на навайтем, и 2-мы не нажали на его дочек, то закрываем все дроплисты
             navDropdown.hide(animationSpeed);
         }
 

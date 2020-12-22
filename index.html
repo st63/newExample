@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Это сделано чтобы приоритетные были мобилки, а под другие устройства потом подгоняется-->
     <title>A Great Demo on CodePen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
@@ -15,7 +17,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container__all">
         <div class="sidebar">
             <div class="logo">A<span id="dmin">DMIN</span></div>
             <div class="nav">
@@ -81,7 +83,7 @@
                     </div>
                 </div>
                 <div class="nav__box">
-                    <div class="btn">
+                    <div class="btn__sidebar">
                         <div class="btn__arrow"></div>
                     </div>
                 </div>
@@ -135,30 +137,42 @@
                             <div class="message__dropdown__title">MESSAGE CENTER</div>
                             <div class="message__dropdown__list">
                                 <div class="message__dropdown__list--item">
-                                    <div class="img"><img src="img/undraw_profile_1.svg" alt=""><div class="online"></div></div>
+                                    <div class="img"><img src="img/undraw_profile_1.svg" alt="">
+                                        <div class="online"></div>
+                                    </div>
                                     <div class="dropdown__list--content">
-                                        <div class="list--item__text"><a href="">Hi there! i am wondering and you ...</a></div>
+                                        <div class="list--item__text"><a href="">Hi there! i am wondering and you
+                                                ...</a></div>
                                         <div class="list--item__title">Emily Fowler . 58m</div>
                                     </div>
                                 </div>
                                 <div class="message__dropdown__list--item">
-                                    <div class="img"><img src="img/undraw_profile_2.svg" alt=""><div class="online"></div></div>
+                                    <div class="img"><img src="img/undraw_profile_2.svg" alt="">
+                                        <div class="online"></div>
+                                    </div>
                                     <div class="dropdown__list--content">
-                                        <div class="list--item__text"><a href="">I have the photos that you ordere...</a></div>
+                                        <div class="list--item__text"><a href="">I have the photos that you
+                                                ordere...</a></div>
                                         <div class="list--item__title">Jae Shun . 1d</div>
                                     </div>
                                 </div>
                                 <div class="message__dropdown__list--item">
-                                    <div class="img"><img src="img/undraw_profile_3.svg" alt=""><div class="online"></div></div>
+                                    <div class="img"><img src="img/undraw_profile_3.svg" alt="">
+                                        <div class="online"></div>
+                                    </div>
                                     <div class="dropdown__list--content">
-                                        <div class="list--item__text"><a href="">Last month's report looks great, i ...</a></div>
+                                        <div class="list--item__text"><a href="">Last month's report looks great, i
+                                                ...</a></div>
                                         <div class="list--item__title">Morgan Alvares . 2d</div>
                                     </div>
                                 </div>
                                 <div class="message__dropdown__list--item">
-                                    <div class="img"><img src="img/undraw_profile.svg" alt=""><div class="online"></div></div>
+                                    <div class="img"><img src="img/undraw_profile.svg" alt="">
+                                        <div class="online"></div>
+                                    </div>
                                     <div class="dropdown__list--content">
-                                        <div class="list--item__text"><a href="">Am i a good boy? The reason i as...</a></div>
+                                        <div class="list--item__text"><a href="">Am i a good boy? The reason i as...</a>
+                                        </div>
                                         <div class="list--item__title">Chicken the Dog . 2w</div>
                                     </div>
                                 </div>
@@ -188,12 +202,69 @@
                 </div>
             </div>
             <div class="content">
-                
+                <div class="container text-secondary bg-white">
+                    <div class="row text-primary bg-light">
+                        <div class="col button__title">Chicken the Dog</div>
+                    </div>
+                    <div class="buttons__content">
+                        e.g. as you can see, they Pay To and Customer cells are not spanning 50% each one but there is
+                        some empty space at the end and you'll see others behaviors. some empty space at the end and
+                        you'll see others behaviors.
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary"><i class="fas fa-fw fa-folder text-white-50"></i>Split button
+                            primery</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-success"><i class="fas fa-fw fa-folder text-white-50"></i>Split button
+                            success</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-info"><i class="fas fa-fw fa-folder text-white-50"></i>Split button
+                            info</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-warning text-white"><i
+                                class="fas fa-fw fa-folder text-white-50"></i>Split button
+                            warning</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-danger"><i class="fas fa-fw fa-folder text-white-50"></i>Split button
+                            danger</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-fw fa-folder text-white-50"></i>Split button
+                            secondary</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-light"><i class="fas fa-fw fa-folder text-black-50"></i>Split button
+                            light</button>
+                    </div>
+                    <div class="buttons__content">
+                        some empty space at the end and
+                        you'll see others behaviors.
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-fw fa-folder text-white-50"></i>Split
+                            button
+                            small</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg"><i class="fas fa-fw fa-folder text-white-50"></i>Split
+                            button
+                            large</button>
+                    </div>
+                </div>
             </div>
 
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
         <script src="script.js"></script>
 </body>
 
