@@ -617,10 +617,10 @@
   .tables__cell td:nth-child(5){
     width: 15%;
   }
-  .tables__cell tr:nth-child(1) > th{
+  thead th{
     position: relative;
   }
-  .tables__cell tr:nth-child(1) > th:before{
+  thead th:before{
     font-family: 'icomoon';
     position: absolute;
     content: "\ea3a";
@@ -629,7 +629,7 @@
     right: 15px;
     top: 9px;
   }
-  .tables__cell tr:nth-child(1) > th:after{
+  thead th:after{
     font-family: 'icomoon';
     position: absolute;
     content: "\ea3e";
@@ -638,8 +638,7 @@
     right: 8px;
     top: 9px;
   }
-  .tables__cell tr:nth-child(1) > th:hover:before,
-  .tables__cell tr:nth-child(1) > th:hover:after{
+  thead th:hover{
     cursor: pointer;
   }
   .table__content-top{
@@ -686,7 +685,11 @@
     color: #4D73DD;
   }
   .next__prev-slider-button:not(.previous):hover{
-    background-color: #4D73DD;
+    background-color: #E9ECF3;
+    cursor: pointer;
+  }
+  .next__prev-slider-button:not(.previous):visited{
+    background-color: #365DCD;
     color: #fff;
     cursor: pointer;
   }

@@ -212,7 +212,12 @@
                         <div class="table__content-top">
                             <div>
                                 Show
-                                <input class="table__content-number" type="number">
+                                <select class="table__content-number">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
                                 entries
                             </div>
                             <div>Search:
@@ -220,14 +225,14 @@
                             </div>
                         </div>
                         <table>
-                            <tr>
+                            <thead>
                                 <th>Name</th>
                                 <th>Position</th>
                                 <th>Office</th>
                                 <th>Age</th>
                                 <th>Start date</th>
                                 <th>Salary</th>
-                            </tr>
+                            </thead>
                             <tr>
                                 <td>Jennifer Chang</td>
                                 <td>Regional Director</td>
@@ -236,14 +241,14 @@
                                 <td>2010/11/14</td>
                                 <td>$357,650</td>
                             </tr>
-                            <tr>
+                            <tfoot>
                                 <th>Name</th>
                                 <th>Position</th>
                                 <th>Office</th>
                                 <th>Age</th>
                                 <th>Start date</th>
                                 <th>Salary</th>
-                            </tr>
+                            </tfoot>
                         </table>
                         <div class="table__content-bottom">
                             <div class="table__content-bottom-text">Showing 1 to 10 of 57 entries</div>
