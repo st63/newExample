@@ -12,6 +12,7 @@
   }
   a:hover{
     text-decoration: none;
+    color: #fff;
   }
   ul{
     list-style: none;
@@ -47,7 +48,8 @@
   .content{
     background-color:#F0F1F5;
     font-family: 'Nunito', sans-serif;
-    padding-top: 21px;
+    padding-top: 24px;
+    height: 100vh;
   }
   .logo{
     padding: 23px 0px 28px 0px;
@@ -451,7 +453,8 @@
   .container{
     margin-left: 7px;
   }
-  .buttons__title{
+  .buttons__title,
+  .table__title-two{
     color: #5075DF;
     background-color:#F8F9FC;
     border-bottom: 2px solid #F2F4F8;
@@ -544,12 +547,13 @@
     color: #4F74DF;
     font-weight: 700;
   }
-  .buttons__title-main{
+  h1{
     font-size: 27px;
     font-weight: 600;
     color: #5A5C69;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     margin-left: 22px;
+    margin-top: 0;
   }
   .nav__dropdown,
   .user__dropdown,
@@ -557,3 +561,85 @@
   .alerts__dropdown{
     z-index: 1;
   }
+  .tables__title{
+    margin-bottom: 5px;
+  }
+  p{
+    color: #5A5C69;
+    font-size: 14px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+  }
+  .table__title-two{
+    margin-top: 0;
+  }
+  .table__content{
+    background-color: #fff;
+  }
+  .tables__cell{
+    margin-left: 22px;
+    margin-right: 22px;
+    color: #5A5C69;
+    font-size: 12px;
+  }
+  .tables__cell th{
+    font-weight: 700;
+  }
+  .table__content{
+    padding: 17px 15px;
+  }
+  table{
+    width: 100%;
+  }
+  .tables__cell th,
+  .tables__cell td{
+    border: 2px solid #E3E6F0;
+    padding-left: 10px;
+    height: 35px;
+  }
+  .tables__cell th:nth-child(1),
+  .tables__cell td:nth-child(1){
+    width: 201px;
+  }
+  .tables__cell th:nth-child(2),
+  .tables__cell td:nth-child(2){
+    width: 289px;
+  }
+  .tables__cell th:nth-child(3),
+  .tables__cell td:nth-child(3){
+    width: 153px;
+  }
+  .tables__cell th:nth-child(4),
+  .tables__cell td:nth-child(4){
+    width: 120px;
+  }
+  .tables__cell th:nth-child(5),
+  .tables__cell td:nth-child(5){
+    width: 156px;
+  }
+  .tables__cell tr:nth-child(1) > th{
+    position: relative;
+  }
+  .tables__cell tr:nth-child(1) > th:before{
+    font-family: 'icomoon';
+    position: absolute;
+    content: "\ea3a";
+    font-size: 9px;
+    opacity: .4;
+    right: 15px;
+    top: 9px;
+  }
+  .tables__cell tr:nth-child(1) > th:after{
+    font-family: 'icomoon';
+    position: absolute;
+    content: "\ea3e";
+    font-size: 9px;
+    opacity: .4;
+    right: 8px;
+    top: 9px;
+  }
+  .tables__cell tr:nth-child(1) > th:hover:before,
+  .tables__cell tr:nth-child(1) > th:hover:after{
+    cursor: pointer;
+  }
+  

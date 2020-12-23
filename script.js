@@ -1,22 +1,23 @@
 $(function () {
-    const animationSpeed  = 300
-    const navDropdown     = $('.nav__dropdown')
-    const navLink         = $('.nav__link')
-    const navItem         = $('.nav__item')
-    const headerUserName  = $('.header__user--name')
-    const headerUserAlert = $('.header__user--alert')
-    const headerUserMail  = $('.header__user--mail')
-    const userDropdown    = $('.user__dropdown')
-    const messageDropdown = $('.message__dropdown')
-    const alertsDropdown  = $('.alerts__dropdown')
-    const buttonsCards    = $('.buttons__cards')
+    const animationSpeed      = 300
+    const navDropdown         = $('.nav__dropdown')
+    const navLink             = $('.nav__link')
+    const navItem             = $('.nav__item')
+    const headerUserName      = $('.header__user--name')
+    const headerUserAlert     = $('.header__user--alert')
+    const headerUserMail      = $('.header__user--mail')
+    const userDropdown        = $('.user__dropdown')
+    const messageDropdown     = $('.message__dropdown')
+    const alertsDropdown      = $('.alerts__dropdown')
+    const componentsChildren  = $('.components').children('.nav__dropdown')
+    const components          = $('.components')
 
     navDropdown.hide();
     userDropdown.hide();
     alertsDropdown.hide();
     messageDropdown.hide();
-    buttonsCards.show();
-
+    componentsChildren.show();
+    components.toggleClass('nav__item--open')
 
     navLink.click(function () {
         const parent = $(this).parent()
