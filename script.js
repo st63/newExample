@@ -11,6 +11,8 @@ $(function () {
     const alertsDropdown      = $('.alerts__dropdown')
     const componentsChildren  = $('.components').children('.nav__dropdown')
     const components          = $('.components')
+    const tables              = $('.tables')
+
 
     navDropdown.hide();
     userDropdown.hide();
@@ -18,6 +20,7 @@ $(function () {
     messageDropdown.hide();
     componentsChildren.show();
     components.toggleClass('nav__item--open')
+    tables.toggleClass('nav__item--open')
 
     navLink.click(function () {
         const parent = $(this).parent()
