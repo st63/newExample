@@ -10,6 +10,9 @@
     text-decoration: none;
     color: #fff;
   }
+  a:hover{
+    text-decoration: none;
+  }
   ul{
     list-style: none;
   }
@@ -43,6 +46,8 @@
   }
   .content{
     background-color:#F0F1F5;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 21px;
   }
   .logo{
     padding: 23px 0px 28px 0px;
@@ -443,6 +448,9 @@
     border: 2px solid #fff;
     background-color: #1CC88A;
   }
+  .container{
+    margin-left: 7px;
+  }
   .buttons__title{
     color: #5075DF;
     background-color:#F8F9FC;
@@ -532,49 +540,20 @@
   button:hover{
     box-shadow: inset 0 0 7px;
   }
-
-
-
-
-
-
-
-
-
-
-  /* button{
-    margin: 5px 0px 5px 36px;
-  } */
-  /* .buttons__content{
-    margin: 5px 0px 5px 20px;
-  }
-  .button__title{
-    padding: 13px 0px 13px 36px;
-    margin-bottom: 4px;
+  .active a{
+    color: #4F74DF;
     font-weight: 700;
   }
-  .btn-label {
-    background: rgba(0,0,0,0.15);
+  .buttons__title-main{
+    font-size: 27px;
+    font-weight: 600;
+    color: #5A5C69;
+    margin-bottom: 18px;
+    margin-left: 22px;
   }
-  button .fas{
-    background: rgba(0,0,0,0.15);
-    display: inline-block;
-    padding: 11px 0px 11px 0px;
-    margin-right: 10px;
-    width: 38px;
+  .nav__dropdown,
+  .user__dropdown,
+  .message__dropdown,
+  .alerts__dropdown{
+    z-index: 1;
   }
-  button:hover{
-    box-shadow: inset 0 0 5px #000;
-  }
-  .btn{
-    padding: 0px 12px 0px 0px;
-  }
-  .btn-sm .fas{
-    padding: 6px 0px 6px 0px;
-    width: 28px;
-  }
-  .btn-lg .fas{
-    padding: 12px 0px 12px 0px;
-    width: 45px;
-  } */
-  

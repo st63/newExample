@@ -9,11 +9,13 @@ $(function () {
     const userDropdown    = $('.user__dropdown')
     const messageDropdown = $('.message__dropdown')
     const alertsDropdown  = $('.alerts__dropdown')
+    const buttonsCards    = $('.buttons__cards')
 
     navDropdown.hide();
     userDropdown.hide();
     alertsDropdown.hide();
     messageDropdown.hide();
+    buttonsCards.show();
 
 
     navLink.click(function () {
