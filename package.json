@@ -1,0 +1,27 @@
+{
+  "name": "verstkarenat",
+  "version": "1.0.0",
+  "description": "1. Подключить файл стилей `vendor/fontawesome-free/css/all.min.css` к странице\r 2. Добавить тег i с параметрами `<i class=\"fas fa-fw fa-tachometer-alt\"></i>`, где `fa-tachometer-alt` имя иконки.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st63/newExample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/st63/newExample/issues"
+  },
+  "homepage": "https://github.com/st63/newExample#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
