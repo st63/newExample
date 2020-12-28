@@ -53,9 +53,6 @@ const expressions = require('posthtml-expressions');
 const removeAttributes = require('posthtml-remove-attributes');
 const { quotes, sectionSigns, shortWords } = require('richtypo-rules-ru');
 
-/**
- * Основные переменные
- */
 const paths = {
   dist: './dist',
   src: './src',

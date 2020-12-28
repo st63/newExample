@@ -1,22 +1,26 @@
 const { src, dest, parallel, series, watch } = require('gulp');
-const concat       = require('gulp-concat');
-const sass         = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const cleancss     = require('gulp-clean-css');
-const browserSync  = require('browser-sync').create();
-
-const posthtml     = require('gulp-posthtml');
-const include      = require('posthtml-include');
-const richtypo     = require('posthtml-richtypo');
-const expressions  = require('posthtml-expressions');
-const removeAttributes = require('posthtml-remove-attributes');
-const { quotes, sectionSigns, shortWords } = require('richtypo-rules-ru');
+const concat                                 = require('gulp-concat');
+const sass                                   = require('gulp-sass');
+const autoprefixer                           = require('gulp-autoprefixer');
+const cleancss                               = require('gulp-clean-css');
+const browserSync                            = require('browser-sync').create();
+const posthtml                               = require('gulp-posthtml');
+const include                                = require('posthtml-include');
+const richtypo                               = require('posthtml-richtypo');
+const expressions                            = require('posthtml-expressions');
+const removeAttributes                       = require('posthtml-remove-attributes');
+const { quotes, sectionSigns, shortWords }   = require('richtypo-rules-ru');
+const imagemin                               = require('gulp-imagemin');
 
 function imgProcess() {
   return src('src/img/*.svg')
-    //.src('src/img/**/*.*')
-    //.pipe(changed('./dist/img/'))
-    .pipe(dest('dist/img/'));
+    .pipe(imagemin())
+    .pipe(dest('dist/img/'))
+}
+
+function vendorCopy() {
+  return src('src/vendor/**/*.*')
+    .pipe(dest('dist/vendor/'));
 }
 
 function browser() {
@@ -60,10 +64,12 @@ function startWatch(){
     watch('src/pages/**/*.html', series(htmlProcess, browserSync.reload));
     watch('src/components/**/*.html', series(htmlProcess, browserSync.reload));
     watch('src/img/**/*.*', series(imgProcess, browserSync.reload));
+    watch('src/vendor/**/*.*', series(vendorCopy, browserSync.reload));
 }
 
 exports.browserSync = browser;
 exports.styles = styles;
 exports.html = htmlProcess;
 exports.img = imgProcess;
-exports.start = parallel(styles, htmlProcess, imgProcess, browser, startWatch);
+exports.vendor = vendorCopy;
+exports.start = parallel(styles, htmlProcess, imgProcess, vendorCopy, browser, startWatch);
