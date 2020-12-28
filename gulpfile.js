@@ -5,29 +5,65 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleancss     = require('gulp-clean-css');
 const browserSync  = require('browser-sync').create();
 
+const posthtml     = require('gulp-posthtml');
+const include      = require('posthtml-include');
+const richtypo     = require('posthtml-richtypo');
+const expressions  = require('posthtml-expressions');
+const removeAttributes = require('posthtml-remove-attributes');
+const { quotes, sectionSigns, shortWords } = require('richtypo-rules-ru');
+
+function imgProcess() {
+  return src('src/img/*.svg')
+    //.src('src/img/**/*.*')
+    //.pipe(changed('./dist/img/'))
+    .pipe(dest('dist/img/'));
+}
+
 function browser() {
     browserSync.init({
-        server: { baseDir: 'app/'},
+        server: { baseDir: 'dist/'},
         notify: false,
         online: true
     })
 }
 
 function styles() {
-    return src('app/sсss/main.scss')
+    return src('src/style.scss')
         .pipe(sass())
         .pipe(concat('app.min.css'))
         .pipe(autoprefixer({overrideBrowserslist: ['last 10 versions'], grid: true }))
         .pipe(cleancss(({ level: { 1: { specialComments: 0 }}})))
-        .pipe(dest('app/css/'))
+        .pipe(dest('dist/css/'))
         .pipe(browserSync.stream())
 }
 
+function htmlProcess() {
+  return src('src/pages/**/*.html')
+    .pipe(
+      posthtml([
+        include(),
+        expressions(),
+        richtypo({
+          attribute: 'data-typo',
+          rules: [quotes, sectionSigns, shortWords],
+        }),
+        removeAttributes([
+          'data-typo',
+        ]),
+      ]),
+    )
+    .pipe(dest('dist'));
+}
+
 function startWatch(){
-    watch('app/**/*.scss', styles);
-    watch('app/**/*.html').on('change', browserSync.reload);
+    watch('src/**/*.scss', series(styles, browserSync.reload));
+    watch('src/pages/**/*.html', series(htmlProcess, browserSync.reload));
+    watch('src/components/**/*.html', series(htmlProcess, browserSync.reload));
+    watch('src/img/**/*.*', series(imgProcess, browserSync.reload));
 }
 
 exports.browserSync = browser;
-exports.styles  = styles;
-exports.default = parallel(browser, startWatch);
+exports.styles = styles;
+exports.html = htmlProcess;
+exports.img = imgProcess;
+exports.start = parallel(styles, htmlProcess, imgProcess, browser, startWatch);
