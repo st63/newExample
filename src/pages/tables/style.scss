@@ -2,8 +2,7 @@
     margin-bottom: 5px;
   }
   p{
-    color: #5A5C69;
-    font-size: 14px;
+    @include fzcol (14px,#5A5C69);
     margin-left: 22px;
     margin-bottom: 20px;
   }
@@ -14,13 +13,12 @@
     background-color: #fff;
   }
   .tables__cell{
+    @include fzcol (12px,#5A5C69);
     margin-left: 22px;
     margin-right: 22px;
-    color: #5A5C69;
-    font-size: 12px;
-  }
-  .tables__cell th{
-    font-weight: 700;
+    th{
+      font-weight: 700;
+    }
   }
   .table__content{
     padding: 17px 15px;
@@ -56,27 +54,27 @@
   }
   thead th{
     position: relative;
-  }
-  thead th:before{
-    font-family: 'icomoon';
-    position: absolute;
-    content: "\ea3a";
-    font-size: 9px;
-    opacity: .4;
-    right: 15px;
-    top: 9px;
-  }
-  thead th:after{
-    font-family: 'icomoon';
-    position: absolute;
-    content: "\ea3e";
-    font-size: 9px;
-    opacity: .4;
-    right: 8px;
-    top: 9px;
-  }
-  thead th:hover{
-    cursor: pointer;
+    &:before{
+      font-family: 'icomoon';
+      position: absolute;
+      content: "\ea3a";
+      font-size: 9px;
+      opacity: .4;
+      right: 15px;
+      top: 9px;
+    }
+    &:after{
+      font-family: 'icomoon';
+      position: absolute;
+      content: "\ea3e";
+      font-size: 9px;
+      opacity: .4;
+      right: 8px;
+      top: 9px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
   }
   .table__content-top{
     display: flex;

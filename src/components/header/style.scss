@@ -1,4 +1,4 @@
-.header__user--mail,
+  .header__user--mail,
   .header__user--alert,
   .header__user--name,
   .user--name__text,
@@ -12,6 +12,7 @@
     margin: auto 0;
   }
   .search{
+    @include fzcol (13px,#A6A5AB);
     background-color: #F8F9FD;
     width: 350px;
     height: 37px;
@@ -19,10 +20,8 @@
     border: none;
     border-radius: 6px 0 0 6px;
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
     font-weight: 600;
     letter-spacing: 0px;
-    color: #A6A5AB;
     padding: 0px 10px;
     position: relative;
   }
@@ -35,11 +34,11 @@
     margin: auto 0;
     border-radius: 0 6px 6px 0;
     position: absolute;
-  }
-  .fa-search:hover{
-    cursor: pointer;
-    color: white;
-    background-color: #4869CA;
+    &:hover{
+      cursor: pointer;
+      color: white;
+      background-color: #4869CA;
+    }
   }
   .header__user--name{
     border-left: 1px solid #CFD5E1;
@@ -49,9 +48,9 @@
     padding-left: 23px;
     position: relative;
     top: -8px;
-  }
-  .header__user--name:hover{
-    cursor: pointer;
+    &:hover{
+      cursor: pointer;
+    }
   }
   .user--name__photo{
     width: 30px;
@@ -59,11 +58,10 @@
     border-radius: 100%;
   }
   .user--name__text{
+    @include fzcol (13px,#A6A5AB);
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
     font-weight: 600;
     letter-spacing: 0px;
-    color: #A6A5AB;
     margin-right: 7px;
     line-height: 2.7;
   }
@@ -72,28 +70,27 @@
     left: -85px;
     top: 21px;
     font-size: 16px;
-  }
-  .header__user--mail:hover{
-    cursor: pointer;
-    color: #A9ADB7;
-  }
-  .header__user--alert:hover{
-    cursor: pointer;
-    color: #A9ADB7;
+    &:hover{
+      cursor: pointer;
+      color: #A9ADB7;
+    }
   }
   .header__user--alert{
     left: -101px;
     top: 21px;
     font-size: 16px;
     position: relative;
+    &:hover{
+      cursor: pointer;
+      color: #A9ADB7;
+    }
   }
   .alert__value{
-    font-size: 8px;
+    @include fzcol (8px,#fff);
     text-align: center;
     width: 16px;
     height: 12px;
     background-color: #EA5141;
-    color: white;
     border-radius: 4px;
     position: absolute;
     top: -3px;
@@ -101,12 +98,11 @@
     line-height: 1.5;
   }
   .mail__value{
-    font-size: 8px;
+    @include fzcol (8px,#fff);
     text-align: center;
     width: 12px;
     height: 12px;
     background-color: #EA5141;
-    color: white;
     border-radius: 4px;
     position: absolute;
     top: -3px;
@@ -121,6 +117,20 @@
     top: 56px;
     right: -11px;
     font-size: 13px;
+    ul{
+      margin-bottom: 1px;
+    }
+    li{
+      padding: 7px 57px 7px 24px;
+    }
+    .fas{
+      @include fzcol (12px,#888888);
+    }
+    a{
+      color: #000;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+    }
   }
   hr{
     border: 1px solid #F8F9FC;
@@ -129,24 +139,11 @@
   .user__dropdown__list{
     padding: 8px 0px;
   }
-  .user__dropdown ul{
-    margin-bottom: 1px;
-  }
   .user__dropdown li{
-    padding: 7px 57px 7px 24px;
-  }
-  .user__dropdown li:hover{
-    cursor: pointer;
-    background-color: #EBECF0;
-  }
-  .user__dropdown .fas{
-    color: #CFD5E1;
-    font-size: 12px;
-  }
-  .user__dropdown a{
-    color: #000;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    &:hover{
+      cursor: pointer;
+      background-color: #EBECF0;
+    }
   }
   .user__dropdown__list{
     margin: 0;
@@ -157,11 +154,10 @@
   }
   .alerts__dropdown__title,
   .message__dropdown__title{
+    @include fzcol (9px,#fff);
     background-color: #4E73DF;
-    color: #fff;
     border-radius: 5px 5px 0px 0px;
     height: 35px;
-    font-size: 9px;
     padding: 12px 0px 0px 23px;
     font-weight: 800;
   }
@@ -172,27 +168,22 @@
     top: 44px;
     right: 0px;
     font-family: 'Nunito', sans-serif;
+    img{
+      position: relative;
+      top: 4px;
+    }
   }
   .list--item__title{
-    color: #D4D5E0;
-    font-size: 10px;
+    @include fzcol (10px,#D4D5E0);
     font-weight: 700;
     margin-bottom: 5px;
-  }
-  .message__dropdown .list--item__title{
-    margin-top: 7px;
-  }
-  .message__dropdown__list--item:hover{
-    background-color: #F8F9FC;
-    cursor: pointer;
   }
   .alerts__dropdown a,
   .message__dropdown a{
     color: #000;
   }
   .all__mails{
-    color: #D4D5E0;
-    font-size: 10px;
+    @include fzcol (10px,#D4D5E0);
     font-weight: 700;
     text-align: center;
     padding: 10px 0px;
@@ -205,6 +196,10 @@
     justify-content: space-between;
     padding: 11px 0px 7px 23px;
     border-bottom: 2px solid #F8F9FC;
+    &:hover{
+      background-color: #F8F9FC;
+      cursor: pointer;  
+    }
   }
   .list--item__text{
     font-size: 12px;
@@ -215,10 +210,6 @@
   .img{
     margin-right: 15px;
   }
-  .alerts__dropdown img{
-    position: relative;
-    top: 4px;
-  }
   .message__dropdown{
     background-color: #fff;
     position: absolute;
@@ -226,15 +217,20 @@
     top: 44px;
     right: 0px;
     font-family: 'Nunito', sans-serif;
+    .list--item__title{
+      margin-top: 7px;
+    }
   }
   .message__dropdown__list--item{
     display: flex;
     justify-content: space-between;
     padding: 11px 0px 7px 23px;
     border-bottom: 2px solid #F8F9FC;
-  }
-  .message__dropdown__list--item{
     position: relative;
+    &:hover{
+      background-color: #F8F9FC;
+      cursor: pointer;  
+    }
   }
   .online{
     position: absolute;
